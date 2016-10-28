@@ -11,6 +11,10 @@
   margin-top: (10 * $spacing-unit);
   // margin-bottom: (2 * $spacing-unit);
 
+  @include media-query($on-palm) {
+    margin-top: (8 * $spacing-unit);
+  }
+
   h1 {
     color: $brand-primary;
     font-weight: 700;
