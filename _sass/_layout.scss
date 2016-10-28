@@ -1,0 +1,42 @@
+// HERO
+
+.hero {
+  @include outer-container();
+  @extend %clearfix;
+}
+
+.welcome {
+  @include span-columns(12);
+  text-align: center;
+  margin-top: (10 * $spacing-unit);
+  // margin-bottom: (2 * $spacing-unit);
+
+  h1 {
+    color: $brand-primary;
+    font-weight: 700;
+    display: block;
+    margin-bottom: (.5 * $spacing-unit);
+
+    @include media-query($on-palm) {
+      font-size: 40px;
+    }
+  }
+
+  h2 {
+    color: $brand-secondary;
+    font-family: $base-font;
+    margin-bottom: (2 * $spacing-unit);
+
+    @include media-query($on-palm) {
+      font-size: 20px;
+    }
+  }
+  // @include media-query($on-laptop) {
+  //   @include span-columns(6);
+  //   @include shift(1);
+  // }
+  @include media-query($on-palm) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
