@@ -12,12 +12,6 @@ github_username:  domseb
 # Build settings
 markdown: kramdown
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
 gems:
   - jekyll-assets
   - octopress-autoprefixer
