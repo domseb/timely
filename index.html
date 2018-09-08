@@ -1,23 +1,12 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="hero">
+  <div class="left">
+    <div>
+      <a class="logo" href="https://twitter.com/dominosebastian">{% include svg/timely.svg %}</a>
+    </div>
+    <h1 class="fade-in">Decide how long you'd like to read for, and Timely will create a reading list to match. Enter your email address to be notified when we launch the beta.</h1>
+    {% include mailchimp.html %}
+  </div>
 </div>
